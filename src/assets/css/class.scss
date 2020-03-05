@@ -1,0 +1,45 @@
+body {
+	/* 设置菜单字体颜色 */
+	--menu_color: #fff;
+	--menu_color--active: #ffd04b;
+	--menu_background_color: #545c64;
+}
+
+.el-menu--horizontal {
+	border: none !important;
+	&,
+	.el-submenu__title:hover{
+		background-color: transparent !important;
+	}
+	.el-submenu__title{
+		line-height: $height !important;
+		border: none !important;
+	}
+	.el-menu--popup{
+		min-width: auto !important;
+		.el-menu-item{
+			width: 122px;
+			padding: 0 20px !important;
+		}
+	}
+}
+
+//主内容
+.routerView:not(.routerView--table){
+	background: #fff;
+	padding: 14px 16px;
+}
+
+//搜索栏
+.search{
+	box-sizing: border-box;
+	background: #fff;
+	margin-bottom: .5px;
+	padding: 10px 16px;
+}
+
+//内容
+.main_content{
+	background: #fff;
+	padding: 14px 16px;
+}
